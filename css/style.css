@@ -1,0 +1,171 @@
+* {
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #B8ECFF, #76b3da);
+    margin: 0em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EAFFC2;
+}
+
+footer {
+    display: flex;
+    flex-direction: column; /* zorgt ervoor dat de h2 bovenaan blijft */
+    background-color: #EAFFC2;
+    font-size: 11px;
+    align-items: center;
+    padding: 1em;
+}
+
+footer h2 {
+    font-size: 25px;
+    color: #45535d;
+    margin: 0em 0em;
+}
+
+footer div p {
+    background-color: #EAFFC2;
+    color: #45535d;
+    text-align: left;
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 0.2em solid white;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none; /*haalt de puntjes van de list weg*/
+    font-size: 1em;
+    padding-left: 0;
+}
+
+nav a {
+    background-color: #B8ECFF;
+    padding: 0.7em;
+    margin: 0.5em;
+    border: 0.1em solid #FFFFFF;
+    align-items: center;
+    border-radius: 1em;
+}
+
+h1 {
+    font-family: "chorine-large", sans-serif;
+    font-style: normal;
+    color: #45535d;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.3em;
+    box-sizing: border-box;
+    background-color: #EEFFFF;
+    border: 0.3em solid white;
+    border-radius: 1em; /*zorgt voor een ronding van het blok*/
+}
+
+h2 {
+    font-family: "chorine-large", sans-serif;
+    font-style: normal;
+    color: white;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: rgb(72, 113, 154);
+    background-color: rgb(240, 254, 255);
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 1em;
+}
+
+a {
+    transition: all 0.8s;
+    display: inline-block;
+    color: #45535d;
+}
+
+.logo {
+    width: 6em;
+    animation: rotateZoom 20s; /* beginnen met draaien en zoom animatie */
+}
+
+@keyframes rotateZoom {
+    0% {
+        transform: rotate(0deg) /* Beginpositie */
+    }
+    50% {
+        transform: rotate(-90deg)  /* Draai 360 graden*/
+    }
+    100% {
+        transform: rotate(90deg) /* Terug naar beginpositie */
+    }
+}
+
+.iconen-container {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.iconen {
+    width: 6em;
+    height: 6em;
+    border: 0.5em solid white;
+    border-radius: 1em;
+}
+
+.pin {
+    width: 4em;
+    height: 5em;
+    margin: 1em;
+    padding-right: 2em;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row; /* zet de pin en tekst naast elkaar */
+    align-items: center;
+    justify-content: center;
+}
+
+.kadedichtbij {
+    display: block;
+    margin: 0 auto 1em;
+    width: 18em;
+    height: 20em;
+    border-radius: 1em;
+}
+
+.fotos-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.fotos-container img {
+    width: 10em;
+    border-radius: 1em;
+}
+
+.kadezoom {
+    display: block;
+    margin: 0 auto 1em;
+    width: 20em;
+    height: 15em;
+    border-radius: 1em;
+}
+
+.personen-container {
+    display: flex;
+    align-items: center;
+}
+
+.personen {
+    width: 6em;
+    padding-left: 1em;
+}
